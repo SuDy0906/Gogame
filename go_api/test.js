@@ -1,9 +1,9 @@
 const assert = require('assert');
 const http = require('http');
 const { URL } = require('url');
-const app = require('./app'); // Assuming app.js is in the same directory
+const app = require('./app'); 
 
-// Helper function to make HTTP GET requests
+
 function makeRequest(path, callback) {
     const url = new URL(path, 'http://localhost:3001');
     http.get(url, (res) => {
@@ -89,25 +89,21 @@ function testInputOutOfRange() {
     });
 }
 
-// Start server for testing
 const server = http.createServer(app);
 server.listen(3001, async () => {
     console.log('Server is running for testing on port 3001');
     
     try {
-        // Run test cases sequentially
+        
         await testBasicValidInput();
         await testSimpleValidInputWithDraws();
         await testValidInputWithDraws();
         await testNoValidGameConfiguration();
         await testInputOutOfRange();
 
-        // Add more test cases as needed...
-
     } catch (error) {
         console.error('Error during test:', error);
     } finally {
-        // Close server after tests complete
         server.close();
     }
 });
