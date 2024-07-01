@@ -11,13 +11,13 @@ This is a web API that calculates the maximum number of draws that could have oc
     ```
 
 2. Install dependencies:
-
+    ```bash
     npm install
-
+    ```
 3. Start the server:
-
+    ```bash
     node app.js
-  
+    ```
 
 The server will start running on `http://localhost:3000`.
 
@@ -52,6 +52,8 @@ Response:
 ```
 ### Unit Testing
 
-    - git clone https://github.com/SuDy0906/Gogame.git
+You can see a test for 5 test cases after running the following commands:
+    ```bash
     - cd go_api
-
+    - node test.js
+    ```
