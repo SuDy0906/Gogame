@@ -6,8 +6,8 @@ This is a web API that calculates the maximum number of draws that could have oc
 
 1. Clone the repository:
 
-    git clone [https://github.com/SuDy0906/Gogame.git]
-    cd go-game-score-calculation
+    - git clone https://github.com/SuDy0906/Gogame.git
+    - cd go-game-score-calculation
 
 2. Install dependencies:
 
