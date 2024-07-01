@@ -8,6 +8,7 @@ app.get('/', (req, res) => {
 
 function calculateMaxDraws(p1, p2, p3) {
     const totalPoints = p1 + p2 + p3;
+    const totalGames = totalPoints / 2;
   
     if (totalPoints % 2 !== 0) {
         return -1;
@@ -40,5 +41,7 @@ app.get('/:p1/:p2/:p3', (req, res) => {
 });
 
 app.listen(port, () => {
-    console.log(`Server is running on http://localhost:${port}`);
+    console.log(`Server is running on port ${port}`);
 });
+
+module.exports = app;
