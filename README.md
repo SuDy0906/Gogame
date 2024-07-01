@@ -5,9 +5,10 @@ This is a web API that calculates the maximum number of draws that could have oc
 ## Setup
 
 1. Clone the repository:
-
+    ```terminal
     - git clone https://github.com/SuDy0906/Gogame.git
     - cd go_api
+    ```
 
 2. Install dependencies:
 
@@ -48,3 +49,9 @@ Response:
 {
   "max_draws": 6
 }
+```
+### Unit Testing
+
+    - git clone https://github.com/SuDy0906/Gogame.git
+    - cd go_api
+
